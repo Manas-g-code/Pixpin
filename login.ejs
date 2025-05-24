@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixpin</title>
+    <link rel="stylesheet" href="/stylesheets/styleL.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <!--pixpin logo-->
+          <div class="lp" title="PIXPIN">PIXPIN</div>
+          <p class="header">Log in to see more</p>
+
+            <% if(error.length>0){ %>
+                <p class="error"> <%= error %></p>
+            <% } %>
+
+          <form action="/login" method="post">
+            <input name="username" type="username" placeholder="Username" class="detail" autocomplete="username"/><br />
+          <input name="password" type="password" placeholder="Password" class="detail" autocomplete="current-password"/>
+          <input type="submit" class="btn int" value='Log In'/>
+          </form>
+          
+
+          <a href="/forgot-password">Forgot your password?</a>
+
+
+  
+          
+          
+  
+          <footer>
+            <p>
+              By continuing, you agree to Pixpin's
+              <b>Terms of Service, Privacy policy.</b>
+            </p>
+            <hr />
+            <p>Not on Pixpin yet? <a href="/">Sign up</a></p>
+          </footer>
+        </div>
+      </div>
+      <!-- <div class="upbtn">Sign up</div> -->
+  
+</body>
+</html>
