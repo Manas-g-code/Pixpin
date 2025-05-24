@@ -8,6 +8,7 @@ PIXPIN is a full-stack social media web application focused on image sharing. Bu
 
 - 🔐 **User Authentication**
   - Login / Register with username and password
+  - Also an added feature in case user forgot their password
 
 - 🖼️ **Post Management**
   - Create, Read, Update, and Delete image posts
